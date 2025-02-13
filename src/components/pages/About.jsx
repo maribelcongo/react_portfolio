@@ -1,15 +1,10 @@
 import { FaReact, FaHtml5, FaCss3Alt, FaSass, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript } from "react-icons/si";
-
+import "./About.scss";
 const About = () => {
   return (
     <section className="about" id="about">
       <div className="container">
-        {/* Imagen de perfil */}
-        <div className="about-image">
-          <img src="/images/profile.jpg" alt="Tu Nombre" />
-        </div>
-
         {/* Texto sobre ti */}
         <div className="about-text">
           <h2>Sobre Mí</h2>
@@ -21,7 +16,7 @@ const About = () => {
 
           {/* Tecnologías */}
           <div className="skills">
-            <h3>Skills</h3>
+            {/* <h3>Skills</h3> */}
             <div className="icons">
               <div className="icon">
                 <FaReact className="react" /> React
@@ -36,13 +31,13 @@ const About = () => {
                 <FaSass className="sass" /> SASS
               </div>
               <div className="icon">
+                <FaGitAlt className="git" /> Git
+              </div>
+              <div className="icon">
                 <SiTailwindcss className="tailwind" /> Tailwind
               </div>
               <div className="icon">
                 <SiJavascript className="js" /> JavaScript
-              </div>
-              <div className="icon">
-                <FaGitAlt className="git" /> Git
               </div>
             </div>
           </div>
