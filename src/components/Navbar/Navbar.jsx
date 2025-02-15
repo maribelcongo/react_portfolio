@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll"; // ⚡
 import "./Navbar.scss";
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
-
+import logoImage from "../../assets/logo.jpg";
 const Navbar = () => {
   // Estado para el tema
   const [darkMode, setDarkMode] = useState(
@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className={`navbar ${darkMode ? "dark-mode" : ""}`}>
       <div className="logo">
         <Link to="header" smooth={true} duration={500}>
-          Maribel Congo
+          <img src={logoImage} alt="Logo" className="logo-img" />
         </Link>
       </div>
 

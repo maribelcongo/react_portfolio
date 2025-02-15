@@ -1,4 +1,3 @@
-// Variables de color
 $bg-light: #f5f5f5;
 $bg-dark: #0d1117;
 $text-light: #333;
@@ -13,51 +12,72 @@ $accent: #61dafb;
   background: $bg-light;
   color: $text-light;
   transition: background 0.3s, color 0.3s;
+  flex-wrap: wrap;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
-  .logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-  }
+.logo-img {
+  width: 100px;
+  height: 100px;
+}
 
-  .menu-icon {
-    display: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
 
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  width: 30%;
+}
 
-    li {
-      a {
-        text-decoration: none;
-        color: inherit;
-        font-size: 1rem;
-        transition: color 0.3s;
-        cursor: pointer;
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background: $bg-light;
+  padding: 20px 0;
+  text-align: center;
+  transform: translateY(0);
+}
 
-        &:hover {
-          color: $accent;
-        }
-      }
-    }
+.nav-links.closed {
+  transform: translateY(-100%);
+}
 
-    .theme-toggle {
-      font-size: 1.5rem;
-      cursor: pointer;
-      transition: color 0.3s;
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  transition: color 0.3s;
+  cursor: pointer;
+  font-family: "Delius", serif;
+}
 
-      &:hover {
-        color: $accent;
-      }
-    }
-  }
+.nav-links li a:hover {
+  color: $accent;
+}
+
+.theme-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+  color: $accent;
 }
 
 // Modo oscuro
@@ -66,29 +86,27 @@ $accent: #61dafb;
   color: $text-dark;
 }
 
-// Responsive (Menú hamburguesa)
-// @media (max-width: 768px) {
-//   .menu-icon {
-//     display: block;
-//   }
-
-.nav-links {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background: $bg-light;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px 0;
-  text-align: center;
-  display: none;
-}
-
-.nav-links.open {
-  display: flex;
-}
-
 .dark-mode .nav-links {
   background: $bg-dark;
+}
+
+// Responsive (Menú hamburguesa)
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
 }
