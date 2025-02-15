@@ -67,29 +67,28 @@ $accent: #61dafb;
 }
 
 // Responsive (Menú hamburguesa)
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
+// @media (max-width: 768px) {
+//   .menu-icon {
+//     display: block;
+//   }
 
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: $bg-light;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px 0;
-    text-align: center;
-    display: none;
-  }
+.nav-links {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: $bg-light;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 0;
+  text-align: center;
+  display: none;
+}
 
-  .nav-links.open {
-    display: flex;
-  }
+.nav-links.open {
+  display: flex;
+}
 
-  .dark-mode .nav-links {
-    background: $bg-dark;
-  }
+.dark-mode .nav-links {
+  background: $bg-dark;
 }

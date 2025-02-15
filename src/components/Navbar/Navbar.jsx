@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from "react";
-import { Link } from "react-scroll"; // ⚡ Cambié `react-router-dom` por `react-scroll`
+import { Link } from "react-scroll"; // ⚡
 import "./Navbar.scss";
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 

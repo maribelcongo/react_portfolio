@@ -1,24 +1,32 @@
 #projects {
   text-align: center;
   padding: 50px 20px;
-  background: #f5f5f5;
+  margin-bottom: 20px;
+  font-family: "Delius", serif;
+  font-weight: 400;
+  font-style: normal;
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 10px;
+    color: #fa0b83;
   }
 
-  p {
+  #project-description {
     font-size: 1.1rem;
     margin-bottom: 30px;
+  }
+
+  .description_title {
+    font-size: 1.9rem;
   }
 }
 
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
 }
 
 .project {
@@ -30,6 +38,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
 
   img {
     width: 50%;
@@ -52,7 +61,7 @@
 
     a {
       display: inline-block;
-      background: #61dafb;
+      background: #fa0b83;
       color: #fff;
       padding: 10px 15px;
       border-radius: 5px;
@@ -61,26 +70,121 @@
       transition: 0.3s;
 
       &:hover {
-        background: darken(#61dafb, 10%);
+        background: darken(#fa0b83, 10%);
       }
     }
   }
 }
 
-// Alternar lado de la imagen
+.project {
+  &.left {
+    flex-direction: row;
+    color: #000;
+  }
+
+  &.right {
+    flex-direction: row-reverse;
+    color: #000;
+  }
+}
+
+#projects {
+  text-align: center;
+  padding: 50px 20px;
+  margin-bottom: 20px;
+  font-family: "Delius", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fa0b83;
+  }
+
+  #project-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .description_title {
+    font-size: 1.9rem;
+  }
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 400px;
+
+  img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  .info {
+    width: 50%;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    a {
+      display: inline-block;
+      background: #fa0b83;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+
+      &:hover {
+        background: darken(#fa0b83, 10%);
+      }
+    }
+  }
+}
+
+// 🔹 Alternar lado de la imagen (escritorio)
 .project.left {
   flex-direction: row;
+  color: #000;
 }
 
 .project.right {
   flex-direction: row-reverse;
+  color: #000;
 }
 
-// Responsive para móviles
+// 📱 Responsive para móviles
 @media (max-width: 768px) {
-  .project {
+  .project,
+  .project.left,
+  .project.right {
     flex-direction: column;
     text-align: center;
+    height: 100%;
 
     img {
       width: 100%;
