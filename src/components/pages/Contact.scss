@@ -1,69 +1,89 @@
 .contact {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #f1b4dd, #802068);
-  color: white;
+  background-color: #673ab745;
   border-radius: 10px;
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: auto;
+  overflow: hidden;
+  padding: 12px;
 
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #fa0b83;
+    font-family: "Delius", serif;
   }
 
   p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: "Lato", sans-serif;
+    font-family: "Delius", serif;
   }
 
   .contact-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-bottom: 30px;
 
     .icon {
-      font-size: 2.5rem;
-      transition: transform 0.3s, color 0.3s;
-      cursor: pointer;
-
-      &.linkedin {
-        color: #0077b5;
-      }
-
-      &.github {
-        color: #333;
-      }
-
-      &.email {
-        color: #f9f9f9;
-      }
+      font-size: 2rem;
+      color: #fcf8f8;
+      transition: transform 0.3s ease, color 0.3s ease;
 
       &:hover {
-        transform: scale(1.2);
-        color: #fff;
+        color: #fa0b8294;
+      }
+    }
+  }
+  .download-btn {
+    display: inline-block;
+    background: #fa0b83;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    animation: myAnim 1s ease-out;
+
+    @keyframes myAnim {
+      0% {
+        opacity: 0;
+        transform: translateY(-250px);
+      }
+
+      38% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      55% {
+        transform: translateY(-65px);
+      }
+
+      72% {
+        transform: translateY(0);
+      }
+
+      81% {
+        transform: translateY(-28px);
+      }
+
+      90% {
+        transform: translateY(0);
+      }
+
+      95% {
+        transform: translateY(-8px);
+      }
+
+      100% {
+        transform: translateY(0);
       }
     }
   }
 }
-
-// 📱 Responsive
-// @media (max-width: 480px) {
-//   .contact {
-//     padding: 40px 15px;
-//   }
-
-//   h2 {
-//     font-size: 2rem;
-//   }
-
-//   .contact-icons {
-//     gap: 15px;
-
-//     .icon {
-//       font-size: 2rem;
-//     }
-//   }
-// }

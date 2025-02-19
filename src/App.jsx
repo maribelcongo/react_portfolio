@@ -1,19 +1,23 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Header from "./components/Header/Header";
+import Presentation from "./components/Presentation/Presentation";
 import About from "./components/pages/About";
 import Projects from "./components/pages/Projects";
-import Contact from "./components/pages/Contact";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
-      <Header />
-      {/* Secciones siempre visibles en la Home */}
-      <About />
-      <Projects />
-      <Contact />
+      <div className="app-container">
+        <Header />
+
+        <main className="content">
+          <Presentation />
+          <About />
+          <Projects />
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 };

@@ -14,20 +14,44 @@ const Contact = () => {
       <p>¡Hablemos! Encuéntrame en mis redes sociales o envíame un correo.</p>
 
       <div className="contact-icons">
-        <a
+        <motion.a
           href="https://linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
+          whileHover={{ scale: 1.1, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
         >
           <FaLinkedin className="icon linkedin" />
-        </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        </motion.a>
+        <motion.a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
           <FaGithub className="icon github" />
-        </a>
-        <a href="mailto:tucorreo@example.com">
+        </motion.a>
+        <motion.a
+          href="mailto:tucorreo@example.com"
+          whileHover={{ scale: 1.1, rotate: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
           <FaEnvelope className="icon email" />
-        </a>
+        </motion.a>
       </div>
+
+      {/* Botón de descarga CV */}
+      <motion.a
+        href="/path/to/your/CV.pdf" // Asegúrate de poner el link correcto
+        download="TuNombre_CV"
+        className="download-btn"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
+        Descargar CV
+      </motion.a>
     </motion.section>
   );
 };
