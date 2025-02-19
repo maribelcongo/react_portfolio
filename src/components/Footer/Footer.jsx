@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Contact from "../Pages/Contact";
+import Contact from "../pages/Contact";
 import "./Footer.scss";
 import backgroundImage from "../../assets/fondo.jpg";
 
