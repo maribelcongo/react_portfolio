@@ -16,11 +16,6 @@ $accent: #61dafb;
   text-align: center;
 }
 
-.logo-img {
-  width: 100px;
-  height: 80px;
-}
-
 .menu-icon {
   display: none;
   font-size: 1.8rem;
@@ -39,9 +34,7 @@ $accent: #61dafb;
 .nav-links.open {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 80px;
-  left: 0;
+
   width: 100%;
   background: $bg-light;
   padding: 20px 0;

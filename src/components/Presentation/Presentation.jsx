@@ -22,8 +22,7 @@ const Presentation = () => {
       }, 4000);
     };
 
-    // Crear burbujas cada 500ms
-    const interval = setInterval(createBubble, 500);
+    const interval = setInterval(createBubble, 300);
 
     return () => clearInterval(interval);
   }, []);
@@ -35,20 +34,20 @@ const Presentation = () => {
         <p>Desarrolladora Frontend</p>
         <div className="icons">
           <a
-            href="https://github.com/tuperfil"
+            href="https://github.com/maribelcongo"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/tuperfil"
+            href="https://linkedin.com/in/maribelcongo"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
-          <a href="mailto:tuemail@gmail.com">
+          <a href="mailto:congoceleste1@gmail.com">
             <FaEnvelope />
           </a>
         </div>
