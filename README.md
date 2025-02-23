@@ -23,21 +23,21 @@ Contacto: Formulario de contacto.
 **LocalStorage**: Para guardar la preferencia de modo oscuro.
 
 
- * Presentación 
+**Presentación**
 ![presentacion](https://github.com/user-attachments/assets/9dd3a0ba-a0e1-40de-9e46-783b84e34e6e)
 
 
 
-* Tecnologias
+**Tecnologias**
 ![about](https://github.com/user-attachments/assets/61936556-6dce-4fdc-b5cc-0274983e6cc5)
 
 
 
-* Proyectos 
+**Proyectos** 
 ![proyectos](https://github.com/user-attachments/assets/e1518764-3281-4304-bb4d-a2057275f0bf)
 
 
 
-*Contacto 
+**Contacto** 
 ![contacto](https://github.com/user-attachments/assets/ba4797d3-d39a-4c1d-9137-0b1c2123cfa9)
 
