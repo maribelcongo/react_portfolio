@@ -3,7 +3,7 @@
 
 Este proyecto es un portafolio personal que muestra información sobre mí, mis proyectos y cómo contactarme. El sitio tiene un diseño responsivo con un menú de navegación, modo oscuro y secciones para cada parte de mi trabajo.
 
-[Ver el Proyecto](reactportafolio2.netlify.app)
+[Ver el Proyecto](https://reactportafolio2.netlify.app/)
 
 ## Funcionalidades
 
