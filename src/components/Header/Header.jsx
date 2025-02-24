@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import Navbar from "../Navbar/Navbar";
 import logoImage from "../../assets/logo.jpg";
 
-import "./header.scss";
+import "./Headers.scss";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(
