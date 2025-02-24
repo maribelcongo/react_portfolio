@@ -30,26 +30,38 @@ const Presentation = () => {
   return (
     <section className="Presentation">
       <div className="content">
-        <h1>Maribel Congo</h1>
-        <p>Desarrolladora Frontend</p>
-        <div className="icons">
-          <a
-            href="https://github.com/maribelcongo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/maribelcongo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-          <a href="mailto:congoceleste1@gmail.com">
-            <FaEnvelope />
-          </a>
+        {/* Foto de perfil a la izquierda */}
+        <div className="image-container">
+          <img
+            src="/foto_Perfil.jpg"
+            alt="Maribel Congo"
+            className="profile-img"
+          />
+        </div>
+
+        {/* Contenido a la derecha */}
+        <div className="text-content">
+          <h1>Maribel Congo</h1>
+          <p>Desarrolladora frontend</p>
+          <div className="icons">
+            <a
+              href="https://github.com/maribelcongo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://linkedin.com/in/maribelcongo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <a href="mailto:congoceleste1@gmail.com">
+              <FaEnvelope />
+            </a>
+          </div>
         </div>
       </div>
     </section>
