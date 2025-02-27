@@ -20,7 +20,7 @@ const projectsData = [
     description:
       "Encantada es el proyecto final de mi carrera en Desarrollo Frontend en ADA ITW. Es un e-commerce diseñado para ofrecer una experiencia de compra intuitiva y atractiva para usuarios interesados en carteras, mochilas, billeteras y riñoneras. \n\n🔹 Tecnologías utilizadas: React, Material-UI, Firebase para la gestión de usuarios y CSS para una interfaz moderna y responsive.",
     image: ecommerceImage,
-    github: "https://github.com/maribelcongo/ecommerceApp",
+    github: "https://github.com/maribelcongo/ecommeceApp",
   },
   {
     id: 3,

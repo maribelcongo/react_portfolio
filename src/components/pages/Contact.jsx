@@ -15,7 +15,7 @@ const Contact = () => {
 
       <div className="contact-icons">
         <motion.a
-          href="www.linkedin.com/in/maribelcongo"
+          href="https://linkedin.com/in/maribelcongo"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1, rotate: 10 }}
@@ -43,7 +43,7 @@ const Contact = () => {
 
       {/* Botón de descarga CV */}
       <motion.a
-        href="public/Currículum _Mca.pdf"
+        href="/maribel frontend.pdf"
         download="Maribel_CV"
         className="download-btn"
         initial={{ opacity: 0 }}
