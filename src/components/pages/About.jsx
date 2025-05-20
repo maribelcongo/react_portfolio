@@ -1,48 +1,58 @@
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 import { FaReact, FaHtml5, FaCss3Alt, FaSass, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript } from "react-icons/si";
 import "./About.scss";
+
+const skills = [
+  { icon: <FaReact className="react" />, name: "REACt" },
+  { icon: <FaHtml5 className="html" />, name: "HTML5" },
+  { icon: <FaCss3Alt className="css" />, name: "CSS3" },
+  { icon: <FaSass className="sass" />, name: "SASS" },
+  { icon: <SiTailwindcss className="tailwind" />, name: "TAILWIND" },
+  { icon: <SiJavascript className="js" />, name: "JAVASCRIPT" },
+  { icon: <FaGitAlt className="git" />, name: "GIT" },
+];
+
 const About = () => {
   return (
-    <section className="about" id="about">
+    <div className="about">
       <div className="container">
         <div className="about-text">
           <h2>Sobre Mí</h2>
-          <p>
-            ¡Hola! soy una apasionada desarrolladora frontend. Me encanta crear
-            interfaces modernas, accesibles y optimizadas para una mejor
-            experiencia de usuario.
-          </p>
+          <p>Estas son algunas de las tecnologías con las que he trabajado.</p>
+        </div>
 
-          {/* Tecnologías */}
-          <div className="skills">
-            {/* <h3>Skills</h3> */}
-            <div className="icons">
-              <div className="icon">
-                <FaReact className="react" /> React
-              </div>
-              <div className="icon">
-                <FaHtml5 className="html" /> HTML
-              </div>
-              <div className="icon">
-                <FaCss3Alt className="css" /> CSS
-              </div>
-              <div className="icon">
-                <FaSass className="sass" /> SASS
-              </div>
-              <div className="icon">
-                <FaGitAlt className="git" /> Git
-              </div>
-              <div className="icon">
-                <SiTailwindcss className="tailwind" /> Tailwind
-              </div>
-              <div className="icon">
-                <SiJavascript className="js" /> JavaScript
-              </div>
-            </div>
-          </div>
+        <div className="skills">
+          <Splide
+            options={{
+              type: "loop",
+              perPage: 3,
+              perMove: 1,
+              gap: "2px",
+              autoplay: true,
+              interval: 2500,
+              pauseOnHover: true,
+              arrows: true,
+              pagination: false,
+              breakpoints: {
+                768: { perPage: 2 },
+                1024: { perPage: 2 },
+              },
+            }}
+          >
+            {skills.map((skill, index) => (
+              <SplideSlide key={index}>
+                <div className="icon">
+                  {skill.icon}
+                  <span>{skill.name}</span>
+                </div>
+              </SplideSlide>
+            ))}
+          </Splide>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

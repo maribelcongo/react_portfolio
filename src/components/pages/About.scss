@@ -27,81 +27,73 @@
       margin-bottom: 35px;
     }
   }
+}
 
-  .skills {
+.skills {
+  margin-top: 20px;
+  height: auto;
+  width: 70%;
+  margin: 10px auto;
+
+  .splide__list {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 15px;
-
-    .icons {
-      display: flex;
-      gap: 10px;
-      justify-items: center;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-    .icon {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-      background: linear-gradient(135deg, #fdc4f661, #fdf3f7);
-      padding: 15px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      transition: all 0.3s ease-in-out;
-      cursor: pointer;
-      width: 100px;
-
-      &:hover {
-        background: linear-gradient(135deg, rgb(250, 27, 101), #fa0b83);
-        color: white;
-        transform: translateY(-5px) scale(1.1);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      }
-
-      svg {
-        font-size: 3rem;
-        transition: transform 0.3s ease-in-out;
-      }
-
-      &:hover svg {
-        transform: rotate(10deg) scale(1.2);
-      }
-
-      .react {
-        color: #61dbfb;
-      }
-      .html {
-        color: #e34f26;
-      }
-      .css {
-        color: #1572b6;
-      }
-      .sass {
-        color: #cc6699;
-      }
-      .tailwind {
-        color: #38b2ac;
-      }
-      .js {
-        color: #f7df1e;
-      }
-      .git {
-        color: #f1502f;
-      }
-    }
   }
 
-  @media (max-width: 768px) {
-    .icons {
-      width: 100%;
+  .splide__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  svg {
+    font-size: 4rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .react {
+    color: #61dbfb;
+  }
+  .html {
+    color: #e34f26;
+  }
+  .css {
+    color: #1572b6;
+  }
+  .sass {
+    color: #cc6699;
+  }
+  .tailwind {
+    color: #38b2ac;
+  }
+  .js {
+    color: #f7df1e;
+  }
+  .git {
+    color: #f1502f;
+  }
+}
+
+.splide {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  /* Aquí cambiamos para que las slides se vean bien en móvil */
+  .skills {
+    .splide__list {
       gap: 15px;
-      flex-direction: column;
-      align-items: center;
+    }
+
+    .splide__slide {
+      /* que cada slide ocupe todo el ancho */
+      flex: 0 0 100%;
+      margin: 0 auto;
     }
   }
 }
