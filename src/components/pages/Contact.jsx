@@ -44,7 +44,7 @@ const Contact = () => {
       {/* Botón de descarga CV */}
       <motion.a
         href="/maribel frontend.pdf"
-        download="Maribel_CV"
+        download="maribel frontend.pdf"
         className="download-btn"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
