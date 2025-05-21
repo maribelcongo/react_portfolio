@@ -43,8 +43,8 @@ const Contact = () => {
 
       {/* Botón de descarga CV */}
       <motion.a
-        href="/maribel frontend.pdf"
-        download="maribel frontend.pdf"
+        href="\congoMaribel_frontend.pdf"
+        download="congo_frontend.pdf"
         className="download-btn"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
